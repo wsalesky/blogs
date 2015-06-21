@@ -1,1 +1,1 @@
-Testing new commit method from xquery/eXistdb 2.2. Should update only commited file, not whole branch as happened with earlier method.
+Testing base 64 encoded content for submitting via params.

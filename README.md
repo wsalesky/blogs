@@ -1,1 +1,1 @@
-Testing new submission method from curl, tracking down missing step for xquery version
+Testing new commit method from xquery/eXistdb 2.2. Should update only commited file, not whole branch as happened with earlier method.

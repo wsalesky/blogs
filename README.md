@@ -1,1 +1,1 @@
-Testing new submission method from curl, troubleshooting commits, should only apply to upadated file, not whole branch.
+Testing new submission method from curl, tracking down missing step for xquery version

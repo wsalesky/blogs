@@ -1,0 +1,243 @@
+
+    
+        
+            
+                Simeon of Samosata — ܫܡܥܘܢ ܫܡܝܫܛܝܐ
+                
+                Syriaca.org: The Syriac Reference Portal
+                The Andrew W. Mellon Foundation
+                The National Endowment for the Humanities
+                The International Balzan Prize Foundation
+                David A. Michelson
+                David A. Michelson
+                Nathan P. Gibson
+                James E. Walters
+                David A. Michelson
+                Thomas A. Carlson
+                Nathan P. Gibson
+                Kristian Heal
+                
+                    Data from Macuch, Abuna, De Urbina, Duval, Assemani (vols. 1-2), Chabot, Wright, and Brock collected, verified, reconciled, and entered by
+                    Kristian Heal
+                
+                
+                    German data entry by
+                    Samer Khader
+                
+                
+                    Editing, document design, proofreading, data entry by
+                    David A. Michelson
+                
+                
+                    Matching with viaf.org records, data entry, data transformation, conversion to XML by
+                    Nathan P. Gibson
+                
+                
+                    GEDSH and Barsoum English name entry, matching with viaf.org records by
+                    James E. Walters
+                
+                
+                    Editing, Arabic name entry, disambiguation research, conversion to XML by
+                    Thomas A. Carlson
+                
+                
+                    Syriac name entry by
+                    Robert Aydin
+                
+                
+                    Editorial oversight for GEDSH and Barsoum English text entry, and proofreading by
+                    Christopher Johnson
+                
+                
+                    GEDSH and Barsoum English text entry and proofreading by
+                    the Syriac Research Group, University of Alabama
+                
+            
+            
+                
+            
+            
+                Syriaca.org: The Syriac Reference Portal
+                http://syriaca.org/person/14/tei
+                
+                    
+                        Distributed under a Creative Commons Attribution 3.0 Unported License.
+                        This entry incorporates copyrighted material from the following work(s):
+                                    
+                                
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            used under a Creative Commons Attribution license 
+                            
+                        
+                    
+                
+                2016-12-09+01:00
+            
+            
+                The Syriac Biographical Dictionary
+                David A. Michelson
+                Jeanne-Nicole Mellon Saint-Laurent
+                Nathan P. Gibson
+                Daniel L. Schwartz
+                
+                    Edited by
+                    David A. Michelson
+                
+                
+                    Edited by
+                    Jeanne-Nicole Mellon Saint-Laurent
+                
+                
+                    Edited by
+                    Nathan P.  Gibson
+                
+                
+                    Edited by
+                    Daniel L. Schwartz
+                
+                http://syriaca.org/persons
+                
+                    A Guide to Syriac Authors
+                    http://syriaca.org/authors
+                
+            
+            
+                Born digital.
+            
+        
+        
+            
+                This record created following the Syriaca.org guidelines. 
+                        Documentation available at: http://syriaca.org/documentation.
+                
+                    Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in 
+                            Syriaca.org Dates.
+                
+            
+            
+                
+                    
+                        The name used by Syriaca.org for document titles, citation, and disambiguation. 
+                                These names have been created according to the Syriac.org guidelines for headwords: 
+                                http://syriaca.org/documentation/headwords.html.
+                    
+                    
+                        An anglicized version of a name, included to facilitate searching.
+                    
+                
+                
+                    
+                        A person who is relevant to the Guide to Syriac Authors
+                    
+                    
+                        A person who is relevant to the Bibliotheca Hagiographica Syriaca.
+                    
+                
+            
+        
+        
+            
+                Unvocalized Syriac of any variety or period
+                Vocalized West Syriac
+                Vocalized East Syriac
+                English
+                Names or terms Romanized into English according to the standards 
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage
+                Arabic
+                French
+                German
+                Latin
+            
+        
+        
+            Moved relation/@name to relation/@ref
+            Changed @xml:lang 'en-xsrp1' to 'en-x-srp1'
+            Update persName texts nodes from new headwords.
+            Insert new headwords, new headword id ends with '-h'.
+            Merged in Baumstark data
+            Move headword attribute from Gedesh to first English name.
+            ADDED: Renumbered bibl xml:id attributes and source references to be sequential.
+            ADDED: Add alternate names for search functionality.
+            ADDED: syriaca-computed-end for elements with date attributes
+             CREATED: person 
+        
+    
+    
+        
+            
+                
+                    
+                        Simeon
+                        of Samosata
+                        
+                    
+                    
+                        Simon
+                        of Samosata
+                        
+                    
+                    
+                        شمعون
+                        السميساطي
+                    
+                    
+                        ܫܡܥܘܢ
+                        ܫܡܝܫܛܝܐ
+                    
+                    
+                        ܫܶܡܥܘܽܢ
+                        ܫܡܺܝܫܛܳܝܐ
+                    
+                    
+                        Shemʿon
+                        of Samosata
+                        
+                    
+                    Shemon of Samosata
+                    Shem‘on of Samosata
+                    Simeon of Samosata
+                    
+                        Šemʿôn
+                        von Samosata
+                    
+                    http://syriaca.org/person/14
+                    http://viaf.org/viaf/sourceID/SRP|person_14
+                    
+                    4th century
+                    A pupil of St. Ephrem according to Barsoum.
+                    
+                        The Scattered Pearls: A History of Syriac Literature and Sciences
+                        
+                        10 to 13
+                        236
+                    
+                    
+                        كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية
+                        
+                        203
+                    
+                    
+                        ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ
+                        
+                        226
+                    
+                    
+                        Baumstark, Geschichte der syrischen Literatur mit Ausschluß der christlich-palästinensischen Texte
+                        
+                        33-34
+                    
+                
+                
+                    
+                        Not the same as the 7th cent. (?) Shemʿun of Samosata (http://syriaca.org/person/116) who wrote a biography of Theodotus of Amida.
+                    
+                
+            
+        
+    

@@ -1,1 +1,1 @@
-Testing for LOGAR
+Testing git sync for logar. round 1

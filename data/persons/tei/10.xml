@@ -1,0 +1,396 @@
+
+    
+        
+            
+                Aphrahat — ܐܦܪܗܛ
+                
+                Syriaca.org: The Syriac Reference Portal
+                The Andrew W. Mellon Foundation
+                The National Endowment for the Humanities
+                The International Balzan Prize Foundation
+                David A. Michelson
+                Jeanne-Nicole Mellon Saint-Laurent
+                David A. Michelson
+                Nathan P. Gibson
+                Jeanne-Nicole Mellon Saint-Laurent
+                David A. Michelson
+                Nathan P. Gibson
+                James E. Walters
+                Thomas A. Carlson
+                Kristian Heal
+                
+                    Data from Macuch, Abuna, De Urbina, Duval, Assemani (vols. 1-2), Chabot, Wright, and Brock collected, verified, reconciled, and entered by
+                    Kristian Heal
+                
+                
+                    German data entry by
+                    Samer Khader
+                
+                
+                    Editing, proofreading, data entry and revision by
+                    Jeanne-Nicole Mellon Saint-Laurent
+                
+                
+                    Editing, document design, data architecture, encoding, proofreading, data entry by
+                    David A. Michelson
+                
+                
+                    Proofreading of GEDSH abstracts, addition of confessions and alternate names from GEDSH, matching with viaf.org records, data entry, data transformation, data merging, conversion to XML by
+                    Nathan P. Gibson
+                
+                
+                    GEDSH and Barsoum English name entry, matching with viaf.org records by
+                    James E. Walters
+                
+                
+                    Editing, Syriac name entry, disambiguation research, conversion to XML by
+                    Thomas A. Carlson
+                
+                
+                    Editing, Syriac data conversion, data entry, and reconciling by
+                    Adam P. Kane
+                
+                
+                    Editing and Syriac data proofreading by
+                    Aram Bar Schabo
+                
+                
+                    Syriac name entry by
+                    Robert Aydin
+                
+                
+                    Normalization of GEDSH dates and entry matching with viaf.org records by
+                    Alex Vawter
+                
+                
+                    Editorial oversight for GEDSH and Barsoum English text entry, and proofreading by
+                    Christopher Johnson
+                
+                
+                    GEDSH and Barsoum English text entry and proofreading by
+                    the Syriac Research Group, University of Alabama
+                
+                
+                    Entries adapted from the work of
+                    Jean Maurice Fiey
+                
+                
+                    Entries adapted from the work of
+                    Ugo Zanetti
+                
+                
+                    Entries adapted from the work of
+                    Claude Detienne
+                
+            
+            
+                
+            
+            
+                Syriaca.org: The Syriac Reference Portal
+                http://syriaca.org/person/10/tei
+                
+                    
+                        Distributed under a Creative Commons Attribution 3.0 Unported License.
+                        This entry incorporates copyrighted material from the following work(s):
+                                    
+                                
+                                    
+                                
+                                
+                                    
+                                
+                            
+                            used under a Creative Commons Attribution license 
+                            
+                        
+                    
+                
+                2016-08-17-04:00
+            
+            
+                The Syriac Biographical Dictionary
+                David A. Michelson
+                Jeanne-Nicole Mellon Saint-Laurent
+                Nathan P. Gibson
+                Daniel L. Schwartz
+                
+                    Edited by
+                    David A. Michelson
+                
+                
+                    Edited by
+                    Jeanne-Nicole Mellon Saint-Laurent
+                
+                
+                    Edited by
+                    Nathan P.  Gibson
+                
+                
+                    Edited by
+                    Daniel L. Schwartz
+                
+                http://syriaca.org/persons
+                
+                    Qadishe: A Guide to the Syriac Saints
+                    http://syriaca.org/q
+                
+                
+                    A Guide to Syriac Authors
+                    http://syriaca.org/authors
+                
+            
+            
+                Gateway to the Syriac Saints
+                Jeanne-Nicole Mellon Saint-Laurent
+                David A.
+                Michelson
+                
+                    Edited by
+                    Jeanne-Nicole Mellon Saint-Laurent
+                
+                
+                    Edited by
+                    David A.
+                    Michelson
+                
+                http://syriaca.org/saints
+                
+                    Qadishe: A Guide to the Syriac Saints
+                    http://syriaca.org/q
+                
+            
+            
+                Born digital.
+            
+        
+        
+            
+                This record created following the Syriaca.org guidelines. 
+                        Documentation available at: http://syriaca.org/documentation.
+                
+                    Approximate dates described in terms of centuries or partial centuries
+                            have been interpreted as documented in 
+                            Syriaca.org Dates.
+                
+            
+            
+                
+                    
+                        The name used by Syriaca.org for document titles, citation, and disambiguation. 
+                                These names have been created according to the Syriac.org guidelines for headwords: 
+                                http://syriaca.org/documentation/headwords.html.
+                    
+                    
+                        An anglicized version of a name, included to facilitate searching.
+                    
+                
+                
+                    
+                        A person who is relevant to the Guide to Syriac Authors
+                    
+                    
+                        A person who is relevant to the Bibliotheca Hagiographica Syriaca.
+                    
+                
+            
+        
+        
+            
+                Unvocalized Syriac of any variety or period
+                Vocalized West Syriac
+                Vocalized East Syriac
+                English
+                Names or terms Romanized into English according to the standards 
+                        adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage
+                Arabic
+                French
+                German
+                Latin
+            
+        
+        
+            Moved relation/@name to relation/@ref
+            Update persName texts nodes from new headwords.
+            Insert new headwords, new headword id ends with '-h'.
+            Merged in Baumstark data
+            Add bibl ptr elements.
+            Split names in authors into forename and surname.
+            Manual edit of merged data including standardizing header and abstracts.
+            Merged in data from [duplicate record with same URI].
+            CREATED: person [duplicate record with same URI]
+            ADDED: Renumbered bibl xml:id attributes and source references to be sequential.
+            ADDED: Abstracts, citation, additional names and confessions from GEDSH.
+            ADDED: syriaca-computed-end for elements with date attributes
+             CREATED: person 
+        
+    
+    
+        
+            
+                
+                    
+                        Aphrahat
+                    
+                    
+                        Aphrahaṭ
+                    
+                    
+                        Aphrahat
+                        the Persian
+                    
+                    
+                        افرهاط
+                        الفارسي
+                    
+                    
+                        ܐܦܪܗܛ
+                        ܦܪܣܝܐ
+                    
+                    
+                        ܐܰܦܪܗܰܛ
+                        ܦܳܪܣܳܝܐ
+                    
+                    
+                        ܐܦܪܗܛ
+                    
+                    
+                        ܐܲܦܪܵܗܵܛ
+                    
+                    Aphrahat
+                    Aphrahaat the Persian Anchorite
+                    Aphrahat the Persian
+                    APHRAAT LE PERSE
+                    
+                        Ap(h)rahaṭ
+                    
+                    Aphrahates
+                    http://syriaca.org/person/10
+                    http://viaf.org/viaf/sourceID/SRP|person_10
+                    http://viaf.org/viaf/37707408
+                    http://worldcat.org/identities/lccn-n50-41616
+                    http://www.csc.org.il/db/browse.aspx?db=SB&sL=A&sK=Aphrahat&sT=keywords
+                    45
+                    
+                        Syriac author of 23 ‘Demonstrations’, known as ‘the Persian Sage’.
+                    
+                    male
+                    first half of 4th cent.
+                    364
+                    
+                        In hagiography: Aphrahatwas known as an anchorite who converted from Zoroastrianism to Christianity and fought Arianism in Antioch.
+                    
+                        The saint is venerated on Apr 7 (Latins); Jan 29 (Greeks).
+                    
+                    
+                        
+                            
+                                S. P.
+                                Brock
+                            
+                        
+                        Aphrahaṭ
+                        The Gorgias Encyclopedic Dictionary of the Syriac Heritage
+                        
+                        24-25
+                    
+                    
+                        The Scattered Pearls: A History of Syriac Literature and Sciences
+                        
+                        8
+                        228
+                    
+                    
+                        كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية
+                        
+                        195
+                    
+                    
+                        ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ
+                        
+                        217
+                    
+                    
+                        ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ
+                        
+                        71
+                    
+                    
+                        Bibliotheca Orientalis Clementino-Vaticana
+                        
+                        III:85
+                    
+                    
+                        A Comprehensive Bibliography on Syriac Christianity
+                        
+                        Aphrahat
+                    
+                    
+                        Saints Syriaques
+                        APHRAAT LE PERSE
+                        
+                        45
+                    
+                    
+                        
+                            
+                                A.
+                                Aigrain
+                            
+                        
+                        DHGE
+                        
+                        III, col. 935-36, s.v.
+               l. Aphraate
+                    
+                    
+                        Vies des Saints
+                        
+                        IV, 7 avril, 164-68
+                    
+                    
+                        
+                            
+                                P.
+                                Burchi
+                            
+                        
+                        BS
+                        
+                        I,
+               287-88
+                    
+                    
+                        Baumstark, Geschichte der syrischen Literatur mit Ausschluß der christlich-palästinensischen Texte
+                        
+                        30-31
+                    
+                    
+                        Ortiz de Urbina, Patrologia Syriaca
+                        
+                        13
+                    
+                    
+                        Chabot, Littérature syriaque
+                        
+                        23-25
+                    
+                    
+                        Wright, A Short History of Syriac Literature
+                        
+                        31-32
+                    
+                    
+                        Brock, A brief outline of Syriac literature
+                        
+                        13-16
+                    
+                
+                
+                    
+                        This author was born at a known location.
+                    
+                
+            
+        
+    

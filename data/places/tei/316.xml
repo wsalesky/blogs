@@ -1,0 +1,103 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="es">Nuñua</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Akira Saito</principal>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/316/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2016-05-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#onlineForms" when="2018-10-18-04:00">, , </change><change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-316" source="bib316-1">
+               <placeName full="yes" type="standardized" xml:id="name316-1">Nuñua</placeName>
+               <placeName type="standardized-Andean" xml:id="name316-2">Nuñua</placeName>
+               <placeName type="verbatim" xml:id="name316-3">vn pueblo del proprio nombre</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Urcosuyo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Nuñua</placeName>
+                     <placeName type="verbatim">nuñoa</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Hancoayllo</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Nuñua</settlement>
+               </location>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Melgar</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Nunoa</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-14.47645188 -70.63614364</geo>
+               </location>
+               <location>
+                  <geo>-14 28 35.22720 -070 38 10.11840</geo>
+               </location>
+               <bibl xml:id="bib316-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">153</citedRange>
+               </bibl>
+               <bibl xml:id="bib316-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">153</citedRange>
+               </bibl>
+               <bibl xml:id="bib316-3">
+                  <title>AGI Lima 464</title>
+               </bibl>
+               <idno type="URI">http://logarandes.org/place/316</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

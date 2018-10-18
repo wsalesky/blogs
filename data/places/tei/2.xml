@@ -1,0 +1,105 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="es">Santa Maria de Nieva</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Akira Saito</principal>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/2/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2016-05-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#onlineForms" when="2018-10-18-04:00">Winona, wsalesky, Testing submission of new record.</change><change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-2" source="bib2-1">
+               <placeName full="yes" type="standardized" xml:id="name2-1">Santa Maria de Nieva</placeName>
+               <placeName type="standardized-Spanish" xml:id="name2-2">Santa Maria de</placeName>
+               <placeName type="verbatim" xml:id="name2-3">santa maria de nieua</placeName><placeName source="bib2-3" xml:id="name2-4">Test1</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Luya y Chillao</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Honda</placeName>
+                     <placeName type="verbatim">Honda</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Unta</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Santa Maria de Nieva</settlement>
+               </location>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Condorcanqui</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">Santa Maria de Nieva</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-4.596293759 -77.871476</geo>
+               </location>
+               <location>
+                  <geo>-04 35 46.65840 -077 52 17.31360</geo>
+               </location>
+               <note>saved this according to Coordinates on Steve's list, however it's quite close to what GE recognizes as Santa Maria... Neither looks more populated than the other. / Santa Maria de Nieva is a town in Segovia.</note>
+               <bibl xml:id="bib2-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">218</citedRange>
+               </bibl>
+               <bibl xml:id="bib2-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">218</citedRange>
+               </bibl>
+               <bibl xml:id="bib2-3">
+                  <title>AGI Lima 464</title>
+               </bibl>
+               <idno type="URI">http://logarandes.org/place/2</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">No sat imagery</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,101 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="es">Zaña</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Akira Saito</principal>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/45/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2016-05-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#onlineForms" when="2018-10-30-04:00">winona, test@gmail.com, Testing forms</change><change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-45" source="bib45-1">
+               <placeName full="yes" type="standardized" xml:id="name45-1">Zaña</placeName>
+               <placeName type="standardized-Andean" xml:id="name45-2">Zaña</placeName>
+               <placeName type="verbatim" xml:id="name45-3">vn pueblo del mesmo nombre</placeName><placeName source="bib45-3" xml:id="name45-4">New Name</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">Villa de Zaña</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Zaña</placeName>
+                     <placeName type="verbatim">çaña</placeName>
+                  </region>
+                  <settlement type="pueblo">Zaña</settlement>
+               </location>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Chiclayo</region>
+                  <region type="department">Lambayeque</region>
+                  <settlement type="pueblo">Zaña</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-6.948196504 -79.57800042</geo>
+               </location>
+               <location>
+                  <geo>-06 56 53.50920 -079 34 40.80000</geo>
+               </location>
+               <note>See VanValkenburgh</note>
+               <bibl xml:id="bib45-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">209</citedRange>
+               </bibl>
+               <bibl xml:id="bib45-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">209</citedRange>
+               </bibl>
+               <bibl xml:id="bib45-3">
+                  <title>AGI Lima 464</title>
+               </bibl>
+               <idno type="URI">http://logarandes.org/place/45</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Spelling</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

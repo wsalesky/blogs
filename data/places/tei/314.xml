@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="es">San Geronimo el Real de Pampamarca</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Akira Saito</principal>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/314/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2016-05-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#onlineForms" when="2018-10-31-04:00">, , </change><change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-314" source="bib314-1">
+               <placeName full="yes" type="standardized" xml:id="name314-1">San Geronimo el Real de Pampamarca</placeName>
+               <placeName type="standardized-Spanish" xml:id="name314-2">San Geronimo el Real de</placeName>
+               <placeName type="standardized-Andean" xml:id="name314-3">Pampamarca</placeName>
+               <placeName type="verbatim" xml:id="name314-4">san Geronimo el rreal de pampamarca</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Aymaraes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Cayao Aymara</placeName>
+                     <placeName type="verbatim">cayaoaymara</placeName>
+                  </region>
+                  <settlement type="pueblo">San Geronimo el Real de Pampamarca</settlement>
+               </location>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Aymaraes</region>
+                  <region type="department">Apurímac</region>
+                  <settlement type="pueblo">Pampamarca</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-14.42746994 -73.20672826</geo>
+               </location>
+               <location>
+                  <geo>-14 25 38.89200 -073 12 24.22080</geo>
+               </location>
+               <bibl xml:id="bib314-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">163</citedRange>
+               </bibl>
+               <bibl xml:id="bib314-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">163</citedRange>
+               </bibl>
+               <bibl xml:id="bib314-3">
+                  <title>AGI Lima 464</title>
+               </bibl>
+               <idno type="URI">http://logarandes.org/place/314</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">1/18/2016</note>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

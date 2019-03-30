@@ -11,7 +11,7 @@ The package can be installed via the eXist-db package manager.
 
 Create a new branch:
 
-``` githubxq:branch($base as xs:string?, 
+```githubxq:branch($base as xs:string?, 
     $branch as xs:string, 
     $repo as xs:string, 
     $authorization-token as xs:string)```
@@ -25,14 +25,14 @@ Returns:
  * item()*
  
 Send a commit to GitHub. *A single file.
-``` githubxq:commit($data as item()*, 
+```githubxq:commit($data as item()*, 
     $path as xs:string*, 
     $serialization as xs:string?,
     $encoding as xs:string?,
     $branch as xs:string?, 
     $commit-message as xs:string?, 
     $repo as xs:string,
-    $authorization-token as xs:string) as item()*```
+    $authorization-token as xs:string)```
 
 Parameters:
 * $data - Object/file to be commited to GitHub.
@@ -47,7 +47,7 @@ Returns:
  * item()*
  
 Create a new pull request.
-``` githubxq:pull-request($title as xs:string?, 
+```githubxq:pull-request($title as xs:string?, 
     $body as xs:string?, 
     $branch as xs:string?, 
     $base as xs:string, 
@@ -61,11 +61,10 @@ Parameters:
 * $base - Name of the branch you want the changes pulled into 
 * $repo - GitHub repository
 * $authorization-token - Your personal authorization token.
-:)
 
 
 Respond to GitHub webhook requests. If $branch paramter is used the webhook will respond to requests from that branch. Otherwise the webhook responds to activity in the master branch.
-``` githubxq:execute-webhook($data as item()*, 
+```githubxq:execute-webhook($data as item()*, 
     $application-path as xs:string, 
     $repo as xs:string, 
     $branch as xs:string?, 

@@ -12,4 +12,5 @@ Create a new branch
 ```githubxq:branch($base as xs:string?, 
     $branch as xs:string, 
     $repo as xs:string, 
-    $authorization-token as xs:string)```
+    $authorization-token as xs:string)
+  ```  

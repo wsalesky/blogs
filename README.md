@@ -1,17 +1,26 @@
 # GitHub API XQuery Library
-The GitHub API XQuery Library provides XQuery functions for intereacting with the GitHub API (version 3.0). This library currently supports the following functions: create a new branch, commit files to a branch, submit a pull request. 
+The GitHub API XQuery Library provides XQuery functions for intereacting with the GitHub API (version 3.0). 
+This library currently supports the following interactions with GitHub: 
+* Create a new branch
+* Commit files to a branch
+* Submit a pull request
+* Respond to GitHub webhooks 
 
 ## Requirements
+* eXist-db 3.x.x +
 * EXPath Cryptographic Module Implementation [http://expath.org/ns/crypto]
+* EXPath HTTP Client [http://expath.org/ns/http-client]
 
 ## Installation
 The package can be installed via the eXist-db package manager. 
 
 ## Available Functions
 
-Create a new branch:
+### branch 
+Create a new branch on GitHub
 
-```githubxq:branch($base as xs:string?, 
+```
+githubxq:branch($base as xs:string?, 
     $branch as xs:string, 
     $repo as xs:string, 
     $authorization-token as xs:string)
@@ -24,9 +33,13 @@ Parameters:
  * $authorization-token - Your personal authorization token. (See: GitHub documentation on authorization tokens [https://github.com/blog/1509-personal-api-tokens])
 Returns:
  * item()*
- 
+
+Example: ` githubxq:branch('master', 'newBranchName', 'https://api.github.com/repos/wsalesky/blogs', 'AUTHORIZATION-TOKEN') `
+  
+### commit 
 Send a commit to GitHub. *A single file.
-```githubxq:commit($data as item()*, 
+```
+githubxq:commit($data as item()*, 
     $path as xs:string*, 
     $serialization as xs:string?,
     $encoding as xs:string?,
@@ -48,8 +61,25 @@ Parameters:
 Returns:
  * item()*
  
+Example:
+ ```
+    let $data1 := doc('/db/apps/ba-data/data/bibl/tei/2G3TK7GI.xml')
+    return 
+        githubxq:commit($data1, 
+        '/db/apps/ba-data/data/bibl/tei/2G3TK7GI.xml', 
+        'xml',
+        'utf-8',
+        'newBranchName',
+        'Add new file to newBranchName',
+        'https://api.github.com/repos/wsalesky/blogs',
+        'AUTHORIZATION-TOKEN') 
+ ```
+ 
+### Pull request 
 Create a new pull request.
-```githubxq:pull-request($title as xs:string?, 
+
+```
+githubxq:pull-request($title as xs:string?, 
     $body as xs:string?, 
     $branch as xs:string?, 
     $base as xs:string, 
@@ -65,9 +95,24 @@ Parameters:
 * $repo - GitHub repository
 * $authorization-token - Your personal authorization token.
 
+Example: 
+```
+    githubxq:pull-request('Merge newBranchName', 
+    'Merge changes made to newBranchName into the master branch', 
+    'master', 
+    'newBranchName', 
+    'https://api.github.com/repos/wsalesky/blogs', 
+    'AUTHORIZATION-TOKEN')
+```
 
-Respond to GitHub webhook requests. If $branch paramter is used the webhook will respond to requests from that branch. Otherwise the webhook responds to activity in the master branch.
-```githubxq:execute-webhook($data as item()*, 
+### GitHub webhooks
+Respond to GitHub webhook requests. Use this function to create an endpoint to respond to GitHub webhook requests. This can be
+a useful method of keeping your eXist-db up to date with edits happening on GitHub, a common workflow for distributed teams 
+of developers. If the $branch paramter is used the webhook will respond to requests from that branch, otherwise the webhook 
+responds to activity in the master branch.
+
+```
+githubxq:execute-webhook($data as item()*, 
     $application-path as xs:string, 
     $repo as xs:string, 
     $branch as xs:string?, 
@@ -82,5 +127,13 @@ Parameters:
 * $branch - GitHub branch to get data from
 * $key - Private key for GitHub authentication 
 **          https://developer.github.com/webhooks/securing/
-* $rateLimitToken -  Git Token used for rate limiting 
+* $rateLimitToken -  Git Token used for rate limiting. This is optional. 
+GitHub restricts wehhook activity to 60 unauthenticated requests per hour. 
 **         https://developer.github.com/v3/#rate-limiting
+
+Example: 
+```
+let $data := request:get-data()
+return githubxq:execute-webhook($data, '/db/apps/ba-data',  'https://github.com/wsalesky/blogs/', 'OPTIONAL-BRANCH', 'YOUR-SECRET-KEYE', 'OPTIONAL-RATE-LIMIT-KEY')
+```
+`

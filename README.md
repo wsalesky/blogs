@@ -1,5 +1,6 @@
+
 # GitHub API XQuery Library
-The GitHub API XQuery Library provides XQuery functions for intereacting with the GitHub API (version 3.0). 
+The GitHub API XQuery Library provides XQuery functions for interacting with the GitHub API (version 3.0). 
 This library currently supports the following interactions with GitHub: 
 * Create a new branch
 * Commit files to a branch
@@ -7,7 +8,7 @@ This library currently supports the following interactions with GitHub:
 * Respond to GitHub webhooks 
 
 ## Requirements
-* eXist-db 3.x.x +
+* eXist-db 3.x.x or higher
 * EXPath Cryptographic Module Implementation [http://expath.org/ns/crypto]
 * EXPath HTTP Client [http://expath.org/ns/http-client]
 
@@ -56,8 +57,8 @@ githubxq:commit($data as item()*,
 ```
 
 Parameters:
-* $data - Object/file to be commited to GitHub.
-* $path - Path to file being commited.  Path must be relative to GitHub repository root, should not start with a slash.
+* $data - Object/file to be committed to GitHub.
+* $path - Path to file being committed.  Path must be relative to GitHub repository root, should not start with a slash.
 * $serialization - *Not sure this is necessary
 * $encoding - utf-8|base64
 * $branch - Branch to send commit to. If no branch is specified the default is master.
@@ -113,9 +114,9 @@ githubxq:pull-request('Merge newBranchName',
 
 ### GitHub webhooks
 Respond to GitHub webhook requests. Use this function to create an endpoint to respond to GitHub webhook requests. 
-The script evaluates the request and takes appropriate action based on the GitHub request; uploads new files, updates existing files or deleting files.
+The script evaluates the request and takes appropriate action based on the contents of the request; uploads new files, updates existing files or deleting files.
 This can be a useful method of keeping your eXist-db up to date with edits happening on GitHub, a common workflow for distributed teams 
-of developers. If the $branch paramter is used the webhook will respond to requests from that branch, otherwise the webhook 
+of developers. If the `$branch` parameter is used the webhook will respond to requests from the named branch, otherwise the webhook 
 responds to activity in the master branch. 
 
 ```
@@ -164,4 +165,3 @@ Webhook settings:
 * Secret: You will need to generate a secret key to verify webhook requests. See: https://developer.github.com/webhooks/securing/
 Keep track of the secret, as it will have to be added the access-config.xml file, which is not stored in the github repository. 
 * Leave all the other default options checked
-

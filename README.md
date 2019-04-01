@@ -34,7 +34,13 @@ Parameters:
 Returns:
  * item()*
 
-Example: ` githubxq:branch('master', 'newBranchName', 'https://api.github.com/repos/wsalesky/blogs', 'AUTHORIZATION-TOKEN') `
+Example:
+``` 
+githubxq:branch('master', 
+    'newBranchName', 
+    'https://api.github.com/repos/wsalesky/blogs', 
+    'AUTHORIZATION-TOKEN')
+```
   
 ### commit 
 Send a commit to GitHub. *A single file.
@@ -63,9 +69,9 @@ Returns:
  
 Example:
  ```
-    let $data1 := doc('/db/apps/ba-data/data/bibl/tei/2G3TK7GI.xml')
-    return 
-        githubxq:commit($data1, 
+let $data1 := doc('/db/apps/ba-data/data/bibl/tei/2G3TK7GI.xml')
+return 
+    githubxq:commit($data1, 
         '/db/apps/ba-data/data/bibl/tei/2G3TK7GI.xml', 
         'xml',
         'utf-8',
@@ -97,7 +103,7 @@ Parameters:
 
 Example: 
 ```
-    githubxq:pull-request('Merge newBranchName', 
+githubxq:pull-request('Merge newBranchName', 
     'Merge changes made to newBranchName into the master branch', 
     'master', 
     'newBranchName', 
@@ -106,10 +112,11 @@ Example:
 ```
 
 ### GitHub webhooks
-Respond to GitHub webhook requests. Use this function to create an endpoint to respond to GitHub webhook requests. This can be
-a useful method of keeping your eXist-db up to date with edits happening on GitHub, a common workflow for distributed teams 
+Respond to GitHub webhook requests. Use this function to create an endpoint to respond to GitHub webhook requests. 
+The script evaluates the request and takes appropriate action based on the GitHub request; uploads new files, updates existing files or deleting files.
+This can be a useful method of keeping your eXist-db up to date with edits happening on GitHub, a common workflow for distributed teams 
 of developers. If the $branch paramter is used the webhook will respond to requests from that branch, otherwise the webhook 
-responds to activity in the master branch.
+responds to activity in the master branch. 
 
 ```
 githubxq:execute-webhook($data as item()*, 
@@ -134,6 +141,27 @@ GitHub restricts wehhook activity to 60 unauthenticated requests per hour.
 Example: 
 ```
 let $data := request:get-data()
-return githubxq:execute-webhook($data, '/db/apps/ba-data',  'https://github.com/wsalesky/blogs/', 'OPTIONAL-BRANCH', 'YOUR-SECRET-KEYE', 'OPTIONAL-RATE-LIMIT-KEY')
+return 
+    githubxq:execute-webhook($data, 
+        '/db/apps/ba-data',  
+        'https://github.com/wsalesky/blogs/', 
+        'OPTIONAL-BRANCH', 
+        'YOUR-SECRET-KEYE', 
+        'OPTIONAL-RATE-LIMIT-KEY')
 ```
-`
+
+Note: The xquery responding to GitHub must be run with elevated privileges in order to save and edit the files in your application. 
+
+Example: ` sm:chmod(xs:anyURI(xs:anyURI('YOUR-ENDPOINT.xql'), "rwsr-xr-x")) `
+
+### Set up GitHub webhooks
+Read about webhooks here: [https://developer.github.com/webhooks/]
+
+Webhook settings: 
+
+* Payload URL:  Full url to your endpoint. (example: http://5ba09277.ngrok.com/exist/apps/srophe/modules/git-sync.xql)
+* Content type: application/json
+* Secret: You will need to generate a secret key to verify webhook requests. See: https://developer.github.com/webhooks/securing/
+Keep track of the secret, as it will have to be added the access-config.xml file, which is not stored in the github repository. 
+* Leave all the other default options checked
+

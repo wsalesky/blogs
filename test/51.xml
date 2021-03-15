@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TEST 3 Sermon 51: "The Use of Money"</title>
+            <title>TEST 5 Sermon 51: "The Use of Money"</title>
             <author>Wesley, John</author>
             <editor>Taylor, Michelle M.</editor>
          </titleStmt>

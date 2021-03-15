@@ -1,0 +1,343 @@
+<?xml-model type="application/xml" href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/srophe/srophe-xQueries/master/Caesarea-Data-Entry-Phase2/testimonia-metadata-entry.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="en" level="a">Philo, <title level="m">Embassy to Gaius</title> 276-327</title>
+        <title level="m" xml:lang="en">Caesarea Maritima: A Collection of Testimonia</title>
+        <sponsor>Vanderbilt University</sponsor>
+        <principal>Joseph L. Rife</principal>
+        <editor role="general" ref="https://caesarea-maritima.org/documentation/editors.xml#jrife">Joseph L. Rife</editor>
+        <editor role="general" ref="https://caesarea-maritima.org/documentation/editors.xml#plieberman">Phillip I. Lieberman</editor>
+        <editor role="technical" ref="https://caesarea-maritima.org/documentation/editors.xml#dmichelson">David A.
+        Michelson</editor>
+        <editor role="technical" ref="https://caesarea-maritima.org/documentation/editors.xml#wpotter">William L. Potter</editor>
+        <editor role="creator" ref="https://caesarea-maritima.org/documentation/editors.xml#jrife">Joseph L. Rife</editor>
+        <editor role="creator" ref="https://caesarea-maritima.org/documentation/editors.xml#bgardner">Bianca Gardner</editor>
+        <respStmt>
+        <resp>TEI encoding by</resp>
+        <name ref="https://caesarea-maritima.org/documentation/editors.xml#wpotter">William L.
+          Potter</name>
+      </respStmt>
+        <respStmt>
+        <resp>Electronic text added by</resp>
+        <name ref="https://caesarea-maritima.org/documentation/editors.xml#bgardner">Bianca
+          Gardner</name>
+      </respStmt>
+        <respStmt>
+        <resp>Testimonia identified by</resp>
+        <name ref="https://caesarea-maritima.org/documentation/editors.xml#jrife">Joseph L. Rife</name>
+      </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="1.0"/>
+      </editionStmt>
+      <publicationStmt>
+        <authority>Caesarea City and Port Exploration Project</authority>
+        <idno type="URI">https://caesarea-maritima.org/testimonia/1/tei</idno>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0">
+            <p>Distributed under a Creative Commons Attribution 4.0 Unported License.</p>
+          </licence>
+        </availability>
+        <date>2020-03-30-04:00</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" xml:lang="en">Caesarea-Maritima.org: A Digital Archive</title>
+        <editor role="general" ref="https://caesarea-maritima.org/documentation/editors.xml#jrife">Joseph L. Rife</editor>
+        <editor role="general" ref="https://caesarea-maritima.org/documentation/editors.xml#plieberman">Phillip I. Lieberman</editor>
+      </seriesStmt>
+      <sourceDesc>
+        <p>Born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl>
+          <p>Authors of testimonia are identified with URIs from The Virtual International Authority File, see <ref target="http://viaf.org">http://viaf.org</ref>. When multiple VIAF URIs exist, preference has been given to VIAF record linked to the Library of Congress authority file.</p>
+          <p>Geographic locations are identified with URIs from Pleiades: A Gazetteer of Past Places, see <ref target="https://pleiades.stoa.org/docs">https://pleiades.stoa.org/docs</ref>.</p>
+          <p>When possible, textual works have been cited using URNs according to the Distributed Text Services (DTS) system, see <ref target="https://distributed-text-services.github.io/specifications">https://distributed-text-services.github.io/specifications</ref>). Additional identifiers have been adopted from the systems used by the Perseus Digital Library (<ref target="http://www.perseus.tufts.edu/hopper">http://www.perseus.tufts.edu</ref>), Syriaca.org (<ref target="http://syriaca.org">http://syriaca.org</ref>), and other relevant authority systems such as WorldCat Identities or OCLC numbers (<ref target="https://www.worldcat.org">https://www.worldcat.org</ref>).</p>
+          <p>Bibliographic items are identified by a caesarea-maritima.org URI, which is linked, when possible to OCLC numbers and other identifiers.</p>
+          <p>Dates have been encoded following the ISO 8601 standard, <ref target="https://www.iso.org/iso-8601-date-and-time-format.html">https://www.iso.org/iso-8601-date-and-time-format.html</ref>, and the best practices established by for the Srophé App, see <ref target="http://srophe.app">http://srophe.app</ref>.</p>
+          <p>Languages have been encoded using ISO 639-1, 639-2, and 639-3 codes, following best practices of the TEI guidelines.</p>
+        </editorialDecl>
+        <classDecl>
+          <taxonomy xml:id="CM-NEAEH">
+            <desc>
+              <title>Caesarea-Maritima.org Chronology</title>: This chronology is adapted from the chronology used in <bibl>
+              <title level="m">The New Encyclopedia of Archaeological Excavations in the Holy Land</title>
+              <ptr target="https://caesarea-maritima.org/bibl/HG492LV3"/>
+            <editor>
+                <forename>Ephraim</forename>
+                <surname>Stern</surname>
+              </editor>
+              <editor>
+                <forename>Ayelet</forename>
+                <surname>Levinzon-Gilbo'a</surname>
+              </editor>
+              <editor>
+                <forename>J.</forename>
+                <surname>Aviram</surname>
+              </editor>
+            </bibl>.  This taxonomy is used in the <gi>catRef</gi> encoding to classify the testimonia according to the time period(s) of the events described, rather than the date of composition of the testimonium. For example, Josephus may describe events occuring well before the period of his writing.
+            </desc>
+            <category xml:id="lowerPaleolithic">
+              <catDesc>Lower Paleolithic, 999999-119999 BCE</catDesc>
+            </category>
+            <category xml:id="upperAcheulean">
+              <catDesc>Upper Acheulean, 498050-148050 BP</catDesc>
+            </category>
+            <category xml:id="acheulean">
+              <catDesc>Acheulean, 298050-148050 BP</catDesc>
+            </category>
+            <category xml:id="mousterian">
+              <catDesc>Mousterian, 138050-38050 BP</catDesc>
+            </category>
+            <category xml:id="middlePaleolithic">
+              <catDesc>Middle Paleolithic, 119999-44999 BCE</catDesc>
+            </category>
+            <category xml:id="upperPaleolithic">
+              <catDesc>Upper Paleolithic, 44999-17999 BCE</catDesc>
+            </category>
+            <category xml:id="kebaran">
+              <catDesc>Kebaran , 18050-13050 BP</catDesc>
+            </category>
+            <category xml:id="epipaleolithic">
+              <catDesc>Epipaleolithic, 17999-8299 BCE</catDesc>
+            </category>
+            <category xml:id="geometricKebaran">
+              <catDesc>Geometric Kebaran, 12499-10899 BCE</catDesc>
+            </category>
+            <category xml:id="natufianCulture">
+              <catDesc>Natufian Culture, 10799-8499 BCE</catDesc>
+            </category>
+            <category xml:id="pre-potteryNeolithic">
+              <catDesc>Pre-Pottery Neolithic, 8299-5499 BCE</catDesc>
+            </category>
+            <category xml:id="potteryNeolithic">
+              <catDesc>Pottery Neolithic, 5499-4499 BCE</catDesc>
+            </category>
+            <category xml:id="chalcolithic">
+              <catDesc>Chalcolithic, 4499-3299 BCE</catDesc>
+            </category>
+            <category xml:id="earlyBronzeAge">
+              <catDesc>Early Bronze Age, 3299-2199 BCE</catDesc>
+            </category>
+            <category xml:id="bronzeAge">
+              <catDesc>Bronze Age, 3299-1199 BCE</catDesc>
+            </category>
+            <category xml:id="earlyBronzeAgeIa-b">
+              <catDesc>Early Bronze Age IA-B, 3299-2999 BCE</catDesc>
+            </category>
+            <category xml:id="earlyBronzeAgeIi">
+              <catDesc>Early Bronze Age II, 2999-2699 BCE</catDesc>
+            </category>
+            <category xml:id="earlyBronzeAgeIii">
+              <catDesc>Early Bronze Age III, 2699-2199 BCE</catDesc>
+            </category>
+            <category xml:id="middleBronzeAge">
+              <catDesc>Middle Bronze Age, 2199-1549 BCE</catDesc>
+            </category>
+            <category xml:id="middleBronzeAgeI">
+              <catDesc>Middle Bronze Age I, 2199-1999 BCE</catDesc>
+            </category>
+            <category xml:id="middleBronzeAgeIia">
+              <catDesc>Middle Bronze Age IIA, 1999-1749 BCE</catDesc>
+            </category>
+            <category xml:id="middleBronzeAgeIib">
+              <catDesc>Middle Bronze Age IIB, 1749-1549 BCE</catDesc>
+            </category>
+            <category xml:id="lateBronzeAge">
+              <catDesc>Late Bronze Age, 1599-1200 BCE</catDesc>
+            </category>
+            <category xml:id="lateBronzeAgeI">
+              <catDesc>Late Bronze Age I, 1549-1399 BCE</catDesc>
+            </category>
+            <category xml:id="lateBronzeAgeIia">
+              <catDesc>Late Bronze Age IIA, 1399-1299 BCE</catDesc>
+            </category>
+            <category xml:id="lateBronzeAgeIib">
+              <catDesc>Late Bronze Age IIB, 1299-1199 BCE</catDesc>
+            </category>
+            <category xml:id="ironAge">
+              <catDesc>Iron Age, 1199-585 BCE</catDesc>
+            </category>
+            <category xml:id="ironAgeIa">
+              <catDesc>Iron Age IA, 1199-1149 BCE</catDesc>
+            </category>
+            <category xml:id="ironAgeIb">
+              <catDesc>Iron Age IB, 1149-999 BCE</catDesc>
+            </category>
+            <category xml:id="ironAgeIia">
+              <catDesc>Iron Age IIA, 999-899 BCE</catDesc>
+            </category>
+            <category xml:id="ironAgeIib">
+              <catDesc>Iron Age IIB, 899-699 BCE</catDesc>
+            </category>
+            <category xml:id="ironIic">
+              <catDesc>Iron IIC, 799-731 BCE</catDesc>
+            </category>
+            <category xml:id="ironAgeIic">
+              <catDesc>Iron Age IIC, 699-585 BCE</catDesc>
+            </category>
+            <category xml:id="babylonianAndPersian">
+              <catDesc>Babylonian and Persian Periods, 585-331 BCE</catDesc>
+            </category>
+            <category xml:id="classicalPeriod">
+                <catDesc>Classical Period, 480-336 BCE</catDesc>
+            </category>
+            <category xml:id="earlyHellenistic">
+              <catDesc>Early Hellenistic Period, 331-166 BCE</catDesc>
+            </category>
+            <category xml:id="hellenistic">
+              <catDesc>Hellenistic Period, 331-36 BCE</catDesc>
+            </category>
+            <category xml:id="earlyNabatean">
+              <catDesc>Early Nabatean Period, 331-36 BCE</catDesc>
+            </category>
+            <category xml:id="nabateanKingdom">
+              <catDesc>Nabatean Kingdom, 167 BCE-106 CE</catDesc>
+            </category>
+            <category xml:id="lateHellenistic">
+              <catDesc>Late Hellenistic Period, 166-36 BCE</catDesc>
+            </category>
+            <category xml:id="earlyRoman">
+              <catDesc>Early Roman Period, 36 BCE-132 CE</catDesc>
+            </category>
+            <category xml:id="herodian">
+              <catDesc>Herodian Period, 36 BCE-70 CE</catDesc>
+            </category>
+            <category xml:id="middleNabatean">
+              <catDesc>Middle Nabatean Period, 24 BCE-50 CE</catDesc>
+            </category>
+            <category xml:id="lateRoman">
+              <catDesc>Late Roman Period, 132-324 CE</catDesc>
+            </category>
+            <category xml:id="byzantine">
+              <catDesc>Byzantine Period, 324-638 CE</catDesc>
+            </category>
+            <category xml:id="earlyIslamic">
+              <catDesc>Early Islamic Period, 638-1099 CE</catDesc>
+            </category>
+            <category xml:id="crusader">
+              <catDesc>Crusader Period, 1099-1291 CE</catDesc>
+            </category>
+            <category xml:id="lateIslamic">
+              <catDesc>Late Islamic Period, 1291-1516 CE</catDesc>
+            </category>
+            <category xml:id="ottoman">
+              <catDesc>Ottoman Period, 1516-1917 CE</catDesc>
+            </category>
+            <category xml:id="britishTerritorialAdministration">
+              <catDesc>British Territorial Administration Period, 1870-1920 CE</catDesc>
+            </category>
+            <category xml:id="britishMandate">
+              <catDesc>British Mandate Period, 1920-1948 CE</catDesc>
+            </category>
+            <category xml:id="modernState">
+              <catDesc>Modern State, 1948- CE</catDesc>
+            </category>
+          </taxonomy>
+          <taxonomy xml:id="CM-Testimonia-Type">
+              <desc>
+                  <title>Caesarea-Maritima.org Testimonia Typology</title>: This typology defines three subsets of testimonia employed by the project and is used in the <gi>catRef</gi> below to further categorize a given testimonia record.
+              </desc>
+              <category xml:id="direct">
+                  <catDesc>A "direct testimonium" contains a word or phrase that is a direct reference to, or name for, the conceptual place Caeseara Maritima or its environs in part or in whole. When a "direct testimonium" also contains indirect references, the classification by type is nevertheless marked only as "direct".</catDesc>
+              </category>
+              <category xml:id="indirect">
+                  <catDesc>An "indirect testimonium" makes only an indirect reference to the conceptual place Caeseara Maritima or its environs in part or in whole. This indirect reference may take the form of a common noun or may be implied by context.</catDesc>
+              </category>
+              <category xml:id="toponymic-epithet">
+                  <catDesc>A "toponymic testimonium" contains a toponymic epithet related to the conceptual place Caeseara Maritima or its environs. When a "direct testimonium" also contain a "toponymic testimonium", the testimonium is marked as belonging to both types. These two types do not always overlap and thus our data set also includes "toponymic testimonia" which are not "direct testimonia".</catDesc>
+              </category>
+          </taxonomy>
+        </classDecl>
+      </encodingDesc>
+    <profileDesc>
+      <abstract>
+        <p/>
+      </abstract>
+      <creation>This entry is taken from <title xml:lang="en" ref="urn:cts:greekLit:tlg0018.tlg031" type="uniform" level="m">Embassy to Gaius</title>
+        <ref target="#bib1-1">276-327</ref> written by <persName ref="http://viaf.org/viaf/310526579" role="author">Philo</persName> in <origDate period="#nabateanKingdom #earlyRoman #herodian #middleNabatean" notBefore="0038" notAfter="0050">38 – 50 CE</origDate>. This work was likely written in <origPlace ref="https://pleiades.stoa.org/places/727070">Alexandria</origPlace>.</creation>
+      <langUsage>
+        <language ident="grc">Ancient Greek</language>
+      </langUsage>
+      <textClass>
+        <classCode scheme="https://distributed-text-services.github.io/specifications">
+          <idno xml:base="https://scaife-cts.perseus.org/api/cts?request=GetPassage&amp;urn=" type="CTS-URN">urn:cts:greekLit:tlg0018.tlg031:276-327</idno>
+        </classCode>
+        <catRef scheme="#CM-Testimonia-Type" target=""/>
+        <catRef scheme="#CM-NEAEH" target="#earlyRoman"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="published">
+      <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-03-30-04:00">CHANGED: Update bibl elements with full citation information from Syriaca.org entry.</change>
+      <change who="http://syriaca.org/documentation/editors.xml#srophe-util" when="2020-03-30-04:00">CHANGED: Update bibl elements with full citation information from Syriaca.org entry.</change>
+      <change who="https://caesarea-maritima.org/documentation/editors.xml#wpotter" when="2020-03-02-06:00">ADDED: testimonium ID, URNs, URLs to edition and translation, and Bibl URIs</change>
+      <change who="https://caesarea-maritima.org/documentation/editors.xml#wpotter" when="2020-03-02-06:00">CREATED: testimonium</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <ab type="identifier">
+        <idno type="URI">https://caesarea-maritima.org/testimonia/1</idno>
+      </ab>
+      <desc type="abstract" xml:id="abstract1-1">
+    <quote>
+     <placeName>τὴν ἐπὶ θαλάττῃ Καισάρειαν</placeName>
+    </quote>, are place names attested in <persName ref="http://viaf.org/viaf/310526579" role="author">Philo</persName>'s <title xml:lang="en" ref="urn:cts:greekLit:tlg0018.tlg031" type="uniform" level="m">Embassy to Gaius</title> 276-327. This testimonium was written circa <origDate period="#nabateanKingdom #earlyRoman #herodian #middleNabatean" notBefore="0038" notAfter="0050">38 – 50 CE</origDate>. This work was likely written in <origPlace ref="https://pleiades.stoa.org/places/727070">Alexandria</origPlace>.</desc>
+      <desc type="context"/>
+      <ab type="edition" xml:lang="grc" xml:id="quote1-1" source="#bib1-1">
+        καὶ δέλτον λαβὼν ταῦτα ἐπιστέλλει· τὴν μὲν κατ ὄψινἔντευξιν, ὦ δέσποτα, φόβος με καὶ αἰδὼς ἀφείλαντο, ὁ μὲνἀπειλὴν ἐκτρεπόμενος, ἡ δὲ τῷ μεγέθει τοῦ περὶ σὲἀξιώματος καταπλήττουσα·γραφὴ δὲ μηνύσει μου τὴν δέησιν, ἣν ἀνθ’ ἱκετηρίαςπροτείνω. πᾶσιν ἀνθρώποις, αὐτοκράτορ, ἐμπέφυκεν ἔρωςμὲν τῆς πατρίδος, τῶν δὲ οἰκείων νόμων ἀποδοχή· καὶ περὶ τούτων οὐδεμιᾶς ἐστίσοι χρεία διδασκαλίας, ἐκθύμως μὲν στέργοντι τὴνπατρίδα, ἐκθύμως δὲ τὰ πατρὶ τιμῶντι. καλὰ δὲ ἑκάστοις, εἰ καὶ μὴ πρὸς ἀλήθειάν ἐστι,διαφαίνεται τὰ οἰκεῖα· κρίνουσι γὰρ αὐτὰ οὑ λογισμῷμᾶλλον ἢ τῷ τῆς εὐνοίας πάθει. γεγέννημαι μέν, ὡς οἶδας,Ἰουδαῖος· ἔστι δέ μοι Ἱεροσόλυμα πατρίς, ἐν ᾗ ὁ τοῦ ὑψίστου θεοῦ νεὼς ἅγιος ἵδρυται·πάππων δὲ καὶ προγόνων βασιλέων ἔλαχον, ὧν οἱ πλείουςἐλέγοντο ἀρχιερεῖς, τὴν βασιλείαν τῆς ἱερωσύνης ἐνδευτέρᾳ τάξει τιθέμενοι καὶ νομίζοντες, ὅσῳ θεὸςἀνθρώπων διαφέρει κατὰ τὸ κρεῖττον τοσούτῳ καὶβασιλείας ἀρχιερωσύνην· τὴν μὲν γὰρ εἶναι θεοῦθεραπείαν, τὴν δὲ ἐπιμέλειαν ἀνθρώπων. ἔθνει δὴ τοιούτῳ προσκεκληρωμένος καὶ πατρίδι καὶ ἱερῷδέομαι ὑπὲρ ἁπάντων· τοῦ μὲν ἔθνους, ἵνα μὴ τὴνἐναντίαν δόξαν ἐνέγκηται τῆς ἀληθείας, εὐσεβέστατα καὶὁσιώτατα διακείμενoν ἐξ ἀρχῆς πρὸς ἅπαντα τὸν ὑμέτερον οἶκον· ἐν οἷς γὰρ ἐφεῖται καὶ ἔξεστι μετὰ νόμων εὐσεβεῖν.οὐδενὸς οὔτε τῶν Ἀσιανῶν οὔτε τῶν ἐν Εὐρώπῃ λείξπεται τὸ παράπαν, εὐχαῖς, ἀναθημάτων κατασκευαῖς, πλήθειθυσιῶν, οὐ μόνον ἐν ταῖς κατὰ τὰς δημοτελεῖς ἑορτὰςἀναγομέναις, ἀλλὰ καὶ ἐν ταῖς καθ’ ἑκάστην ἡμέρανἐντελεχέσιν· ἐξ ὧν οὐ στόματι καὶ γλώσσῃ μηνύουσι τὸεὐσεβὲς μᾶλλον ἡ ψυχῆς ἀφανοῦς βουλεύμασιν οἱ μὴλέγοντες, ὅτι φιλοκαίσαρές εἰσιν, ἀλλ’ ὄντες ὄντως. περὶ δὲ τῆς ἱεροπόλεως τὰ προσήκοντά μοι λεκτέον· αὕτη, καθάπερ ἔφην, ἐμὴμέν ἐστι πατρίς, μητρόπολις δὲ οὐ μιᾶς χώρας Ἰουδαίαςἀλλὰ καὶ τῶν πλείστων, διὰ τὰς ἀποικίας ἃς ἐξέπεμψεν ἐπὶκαιρῶν εἰς μὲν τὰς ὁμόρους, Αἴγυπτον, Φοινίκην, Συρίαντήν τε ἄλλην καὶ τὴν Κοίλην προσαγορευομένην, εἰς δὲ τὰς πόρρω διῳκισμένας, Παμφυλίαν, Κιλικίαν, τὰπολλὰ τῆς Ἀσίας ἄχρι Βιθυνίας καὶ τῶν τοῦ Πόντου μυχῶν,τὸν αὐτὸν τρόπον καὶ εἰς Εὐρώπην, Θετταλίαν, Βοιωτίαν.Μακεδονίαν, Αἰτωλίαν, τὴν Ἀττικήν, Ἄργος, Κόρινθον, τὰπλεῖστα καὶ ἄριστα Πελοποννήσου. καὶ οὐ μόνον αἱ ἤπειροι μεσταὶ τῶν Ἰουδαϊκῶν ἀποικιῶνεἰσιν, ἀλλὰ καὶ νήσων αἱ δοκιμώταται, Εὔβοια, Κύπρος, Κρήτη. καὶ σιωπῶτὰς πέραν Εὐφράτου· πᾶσαι γὰρ ἔξω μέρους βραχέος, βαβυλὼν καὶ τῶν ἄλλων σατραπειῶν αἱ ἀρετῶσαν ἔχουσαιτὴν ἐκ κύκλῳ γῆν Ἰουδαίους ἔχουσιν οἰκήτορας. ὥστ’ ἐὰν μεταλάβῃ σου ἰῆς εὐμενείας ἡ ἐμὴ πατρίς, οὐ μίαπόλις ἀλλὰ καὶ μυρίαι τῶν ἄλλων εὐεργετοῦνται καθ’ἕκαστον κλίμα τῆς οἰκουμένης ἱδρυθεῖσαι, τὸ Εὐρωπαῖον, τὸ Ἀσιανόν, τὸΛιβυκόν, τὸ ἐν ἠπείροις, τὸ ἐν νήσοις, πάραλόν τε καὶμεσόγειον. ἁρμόττει δέ σου τῷ μεγέθει τῆς τοσαύτης τύχης διὰ τῶνεἰς μίαν πόλιν εὐεργεσιῶν μυρίας ἄλλας συνευεργετεῖν,ὅπως διὰ πάντων τῶν τῆς οἰκουμένης μερῶν ᾄδηταί σουτὸ κλέος καὶ οἱ μετ εὐχαριστίας ἔπαινοι συνηχῶνται. φίλων ἐνίων πατρίδας ὅλας τῆς Ῥωμαϊκῆς ἠξίωσας πολιτείας, καὶγεγόνασιν οἱ πρὸ μικροῦ δοῦλοι δεσπόται ἑτέρων· καὶ τῶνἀπολελαυκότων ἰῆς χάριτος μᾶλλον ἢ οὐχ ἧττον οἱ 01 οὓςγέγονεν ἥδονται. κἀγώ τίς εἰμι τῶν εἰδότων μὲν ὅτι δεσπότην ἔχω καὶκύριον, κεκριμένων δὲ ἐν ἰῇ τάξει τῶν ἑταίρων, ἀξιώματοςμὲν ἕνεκα οὐ πολλῶν ὕστερος,εὐνοίας δὲ οὐδενὸς δεύτερος, ἵνα μὴ λέγω πρῶτος. διά τε οὖν τὸ πεφυκέναι καὶ διὰ τὸ πλῆθος τῶνεὐεργεσιῶν, αἷς με κατεπλούτισας, θαρρήσας ἄν ἴσως αἰτήσασθαι τῇ πατρίδι καὶ αὐτός, εἰ καὶ μὴ τὴν Ῥωμαϊκὴνπολιτείαν, ἐλευθερίαν γοῦν ἢ φόρων ἄφεσιν, οὐδὲνἀπετόλμησα τοιοῦτον αἰτήσασθαι, τὸ δὲ φορητότατον,χάριν σοὶ μὲν ἀζήμιον δοῦναι, τῇ δὲ πατρίδι λαβεῖνὠφελιμωτάτην· τί γὰρ ἂν γένοιτο εὐμενείας ἡγεμόνοςὑπηκόοις ἀγαθόν; ἐν Ἱεροσολύμοις πρῶτον, αὐτοκράτορ, ἠγγέλη σου ἡεὐκταία διαδοχή, καὶ ἀπὸ τῆς ἱεροπόλεως ἐπὶ τὰς παρ’ ἑκάτεραἠπείρους ἐχώρησεν ἡ φήμη· προνομίας καὶ διὰ τοῦτοτυγχάνειν ἐστὶν ἀξία παρὰ σοί. καθάπερ γὰρ ἐν ταῖς συγγενείαις οἱ πρεσβύτατοι παῖδεςτυγχάνουσι πρεσβείων, ὅτι πρῶτοι τὸ πατρὸς καὶ τὸμητρὸς ὄνομα τοῖς γονεῦσιν έφήμισαν, τὸν αὐτὸν τρόπον, ἐπειδὴ τῶν ἀνατολικῶν πρώτη πόλις αὕτη σε προσεῖπεν αὐτοκράτορα, δικαία τυγχάνειν πλειόνων ἐστὶνἀγαθῶν, εἰ δὲ μή, τῶν γοῦν ἴσων. τοσαῦτα δικαιολογηθεὶς καὶ δεηθεὶς ἅμα περὶ τῆς πατρίδοςεἶμι τὸ τελευταῖον ἐπὶ τὴν περὶ τοὺ ἱεροῦ δέησιν. τοῦτο, Γάιε δέσποτα, τὸ ἱερὸν χειρόκμητον οὐδεμίαν ἐξ ἀρχῆςμορφὴν παρεδέξατο διὰ τὸ ἕδος τοῦ ἀληθοῦς εἶναι θεοῦ·γραφέων μὲν γὰρ καὶ πλαστῶν ἔργα μιμήματα τῶν αἰσθητῶν θεῶν εἰσιν· τὸν δὲ ἀόρατον εἰκονογραφεῖνἢ διαπλάττειν οὐχ ὅσιον ἐνομίσθη τοῖς ἡμετέροις προγόνοις. Ἀγρίππαςἐτίμησε τὸ ἱερὸν ἐλθών, ὁ πάππος σου, καὶ ὁ Σεβαστὸς διὰτοῦ κελεῦσαι τὰς πανταχόθεν ἀπαρχὰς ἀπαρχὰςἐπιστολαῖς πέμπειν ἐκεῖσε καὶ διὰ τῆς ἐντελεχοῦς θυσίας· καὶ ἡ προμάμμη σου * * * ὅθεν οὐδείς, οὐχ Ἕλλην, οὐβάρβαρος, οὐ σατράπης, οὐ βασιλεύς, οὐκ ἐχθρὸς ἄσπονδος, οὐ στάσις,οὐ πόλεμος, οὐχ ἅλωσις, οὐ πόρθησις, οὐκ ἄλλο τι τῶνὄντων οὐδὲν ἐνεωτέρισέ ποτε οὕτως εἰς τὸν νεών, ὡςἄγαλμα ἢ ξόανον ἤ τι τῶν χειροκμήτων ἱδρύ- σασθαι. καὶ γὰρ εἰ τοῖς οἰκήτορσι τῆς χώρας ἀπήχθοντο δυσμενεῖςὄντες, ἀλλ αἰδώς γέ τις ἢ φόβος εἰσῄει παραλῦσαί τι τῶν ἐξ ἀρχῆς νενομισμένων ἐπὶ τιμῇ τοῦ ποιητοῦ τῶν ὅλων καὶ πατρός·ᾔδεσαν γὰρ ἐκ τούτων καὶ τῶν ὁμοιοτρόπων τὰς τῶνθεηλάτων κακῶν φυομένας ἀνηκέστους συμφοράς. ἧςχάριν αἰτίας ἀσεβὲς σπέρμα σπείρειν εὐλαβοῦντοδεδιότες, μὴ θερίζειν ἀναγκασθῶσι τοὺς ἐπ’ ὀλέθρῳπαντελεῖ καρπούς. ἀλλὰ τί μοι ξένους καλεῖν μάρτυρας ἔχοντι πολλοὺς τῶνοἰκειοτάτων σοι παραστῆσαι; Μάρκος Ἀγρίππας εὐθέως, ὁπρὸς μητρός σου πάππος, ἐν Ἰουδαίᾳ γενόμενος, ἡνίκαἩρῴδης ὁ ἐμὸς πάππος ἐβασίλευε τῆς χώρας, ἀναβῆναιμὲν ἀπὸ θαλάττης εἰς τὴν μητρόπολιν ἐν μεσογείῳκειμένην ἐξίωσς· θεασάμενος δὲ τὸ ἱερὸν καὶ τὸν τῶν ἱερέων κόσμον καὶ τὴν τῶν ἐγχωρίων ἁγιστείαν,ἠγάσθη χρῆμα νομίσας ὑπέρσεμνόν τι καὶ παντὸς λόγουμεῖζον ἑωρακέναι, καὶ διήγημα οὐδὲν ἦν ἕτερον αὐτῷπρὸς τοὺς συνόντας τότε τῶν ἑταίρων ἢ ὁ τοῦ νεὼ καὶ τῶνκατ’ αὐτὸν ἁπάντων ἔπαινος.ὅσας γοῦν ἡμέρας διέτριψεν ἐν τῇ πόλει κατὰ χάριν τὴνπρὸς Ἡρῴδην, ἐφοίτησεν εἰς τὸ τερπόμενος τῇ θέα καὶ τῆς κατασκευῆς καὶ τῶν θυσιῶν καὶτῆς περὶ τὰ ἱερουργούμενα λειτουργίας καὶ τάξεως καὶ τῆςπερὶ τὸν ἀρχιερέα σεμνότητος, ὁπότε ἀσκηθείη τῇ ἱερὰ,στολῇ καὶ κατάρχοι τῶν ἱερῶν.ἀναθήμασι δὲ κοσμήσας ὅσοις ἐξῆν τὸ ἱερὸν καὶ τοὺςοἰκήτορας εὐεργετήσας ὅσα μὴ βλάψει χαριζόμενος,Ἡρῴδην εὐφημήσας πολλὰ καὶ εὐφημηθεὶς μυρία, παρεπέμφθη μέχρι λιμένων, οὐχ ὑπὸ μιᾶς πόλεως,ἀλλ’ ὑπὸ τῆς χώρας ἁπάσης, φυλλοβολούμενός τε καὶθαυμαζόμενος ἐπ’ εὐσεβεία. τί δὲ ὁ ἕτερός σου πάπποςΤιβέριος Καῖσαρ; οὐχὶ ταὐτὰ φαίνεται προῃρημένος; ἐν γοῦν τρισὶ καὶ εἴκοσιν ἔτεσινοἷς αὐτοκράτωρ ἐγένετο τὴν κατὰ τὸ ἱερὸν ἐκ μηκίστωνχρόνων παραδεδομένην θρησκείαν ἐτήρησεν, οὐδὲν αὐτῆςπαραλύσας ἢ παρακινήσας μέρος. ἔχω δέ τι καὶ φιλοτίμημα αὐτοῦ προσδιηγήσασθαι, καίτοιμυρίων ἀπολελαυκὼς ὅτε ἔζη κακῶν· ἀλλὰ τἀληθὲς φίλονκαὶ σοὶ τίμιον. Πιλᾶτος ἦν τῶν ὑπάρχων ἐπίτροπος ἀποδεδειγμένος τῆςἸουδαίας· οὗτος οὐκ ἐπὶ τιμῇ Τιβερίου μᾶλλον ἢ ἕνεκα τοῦλυπῆσαι τὸ πλῆθος ἀνατίθησιν ἐν τοῖς κατὰ τὴν ἱερόπολινἡρῴδου βασιλείοις ἐπιχρύσους ἀσπίδας μήτε μορφὴν ἐχούσας μήτε ἄλλο τι τῶν ἀπηγορευμένων, ἔξωτινὸς ἐπιγραφῆς ἀναγκαίας, ἣ δύο ταῦτα ἐμήνυε, τόν τεἀναθέντα καὶ ὑπὲρ οὗ ἡ ἀνάθεσις. ἐπεὶ δὲ ᾔσθοντο οἱ πολλοί — καὶ περιβόητον ἦν ἤδη τὸπρᾶγμα —, προστησάμενοι τούς τε βασιλέως υἱεῖςτέτταρας οὐκ ἀποδέοντας τό τε ἀξίωμα καὶ τὰς τύχαςβασέων καὶ τοὺς ἄλλους ἀπογόνους καὶ τῶν παρ’ αὐτοῖςτοὺς ἐν τέλει παρεκάλουν τὸ νεωτερισθὲν περὶ τὰςἀσπίδας εἰς ἐπανόρθωσιν ἀγαγεῖν καὶ μὴ κινεῖν ἔθηπάτρια τὸν πρὸ τοῦ πάντα αἰῶνα διαφυλαχθέντα καὶ πρὸς βασιλέων καὶ πρὸςαὐτοκρατόρων ἀκίνητα. στερρῶς δὲ ἀντιλέγοντος — ἦν γὰρ τὴν φύσιν ἀκαμπὴςκαὶ μετὰ τοῦ αὐθάδους ἄμεικτος —, ἀνεβόησαν· „μὴστασίαζε, μὴ πολεμοποίει, μὴ κατάλυε τὴν εἰρήνην· οὐκἔστιν ἀτιμία νόμων ἀρχαίων αὐτοκράτορος τιμή. μὴπρόφασις τῆς εἰς τὸ ἔθνος ἐπηρείας ἔστω σοι Τιβέριος· οὐδὲν ἐθέλει τῶν ἡμετέρων καταλύεσθαι. εἰ δὲφής, αὐτὸς ἐπίδειξον ἢ διάταγμα ἢ ἐπιστολὴν ἤ τιὁμοιότροπον, ἵνα παυσάμενοι τοῦ σοὶ διενοχλεῖν πρέσβειςἑλόμενοι δεώμεθα τοῦ δεσότου.” τὸ τελλυταῖον τοῦτο μάλιστα αὐτὸν ἐξετράχυνεκαταδείσαντα, μὴ τῷ ὄντι πρεσβευσάμενοι καὶ τῆς ἄλληςαὐτὸν ἐπιτροπῆς ἐξελέγξωσι τὰς δωροδοκίας, τὰς ὕβρεις, τἀς ἁρπαγάς, τὰς αἰκίας τὰς ἐπηρείας, τοὺςἀκρίτους καὶ ἐπαλλήλους φόνους, τὴν ἀνήνυτον καὶἀργαλεωτάτην ὠμότητα διεξελθόντες. οἷα οὗν ἐγκότως ἔχων καὶ βαρύμηνις ἄνθρωπος ἐν νοῖς ἦν μήτε καθελεῖν τὰ ἅπαξ ἀνατεθέντα θαρρῶν μήτεβουλόμενός τι τῶν πρὸς ἡδονὴν τοῖς ὑπηκόοιςἐργάσασθαι, ἅμα δὲ καὶ τὴν ἐν τούτοις σταθερότηταΤιβερίου μὴ ἀγνοῶν· ἅπερ ὁρῶντες οἱ ἐν τέλει καὶσυνιέντες, ὅτι μετανοεῖ μὲν ἐπὶ τοῖς πεπραγμένοις, δοκεῖνδὲ οὐ βούλεται. γράφουσι Τιβερίῳ δεητικωτάτας ἐπιστολάς. ὁ δὲδιαναγνοὺς οἴα μιν εἶπε Πιλᾶτον, οἷα δὲ ἠπείλησεν· ὡς δὲὠργίσθη, καίτοι οὐκ εὔληπτος ὢν ὀργῇ, περιττόν ἐστιδιηγεῖσθαι, τοῦ πράγματος ἐξ αὑτοῦ φωνὴν ἀφιέντος. εὐθέως γὰρ οὐδὲ εἰς τὴν ὑστεραίαν ὑπερθέμενοςἐπιστέλλει, μυρία μὲν τοῦ καινουργηθέντος τολμήματοςὀνειδίζων καὶ ἐπιπλήττων, κελεύων δὲ αὐτίκα καθελεῖν τὰς ἀσπίδας καὶ μετακομισθῆναι ἐκ τῆςμητροπόλεως εἰς <placeName>τὴν ἐπὶ θαλάττῃ Καισάρειαν</placeName>, ἐπώνυμοντοῦ προπάππου Σεβαστήν, ἵνα ἀνατεθεῖεν ἐν τῷΣεβαστείῳ· καὶ ἀνετέθησαν. οὕτως ἀμφότερα ἐφυλάχθη, καὶ ἡτιμὴ τοῦ αὐτοκράτορος, καὶ ἡ περὶ τὴν πόλιν ἀρχαίασυνήθεια. τότε μὲν οὖν ἀσπίδες ἦσαν. αἷς οὐδὲν ἀνεζωγράφητο μίμημα· νυνὶ δὲ κολοσσιαῖος ἀνδριάς. καὶ τότε μὲν ἡἀνάθεσις ἐν οἰκίᾳ τῶν ἐπιτρόπων ἦν· τὴν δὲ μέλλουσάνφασιν ἐσωτάτω τοῦ ἱεροῦ κατ αὐτὰ τὰ ἄδυτα γίνεσθαι, εἰςἃ ἅπαξ τοῦ ἐνιαυτοῦ ὁ μέγας ἱερεὺς εἰσέρχεται τῇ νησαίαλεγομένῃ μόνον ἐπιθυμιάσων καὶ κατὰ τὰ πάτριαεὐξόμενος φορὰν ἀγαθῶν εὐετηρίαν τε καὶ εἰρήνηνἅπασιν ἀνθρώποις. κἀν ἄμ τίς που, οὐ λέγω τῶν ἄλλων Ἰουδαίων, ἀλλὰ καὶτῶν ἱερέων, οὐχὶ τῶν ὑστάτων, ἀλλὰ τῶν τὴν εὐθὺς μετὰτὸν πρῶτον τάξιν εἰληχότων, ἢ καθ’ αὑτὸν ἢ καὶ μὴνἐκείνου συνεισέλθῃ, μᾶλλον δὲ κἀν αὐτὸς ὁ ἀρχιερεὺςδυσὶν ἡμέραις τοῦ ἔτους ἢ καὶ τῇ αὐτῇ τρὶς ἢ καὶ τετράκιςεἰσφοιτήσῃ, θάνατον ἀπαραίτητον ὑπομένει τοσαύτη τίς ἐστιν ἡ περὶ τὰ ἄδυτα φυλακὴ τοῦ νομοθέτου μόνα ἐκ πάντωνἄβατα καὶ ἄψαυστα βαουληθέντος αὐτὰ διατηρεῖσθαι.πόσους ἄν οὖν οἴει θανάτους ἑκουσίως ὑπομένειν τοὺς περὶ ταῦτα ὡσιωμένους, εἰθεάσαιντο τὸν ἀνδριάντα εἰσκομιζόμενον; ἐμοὶ μὲνδοκοῦσι γενεὰς ὅλας αὐταῖς γυναιξὶ καὶ τέκνοιςἀποσφάξαντες ἐπὶ τοῖς τῶν οἰκείων πτώμασιν ἑαυτοὺςτελευταῖον καθιερεύσειν. ταῦτα μὲν Τιβέριος ἔγνω. τί δὲ ὁ σὸς πρόπαππος, ὁ τῶν πώποτε γενομένωναὐτοκρατόρων ἄριστος, ὁ πρῶτος ἀρετῆς ἕωεκα καὶ τύχης Σεβαστὸς ὀνομασθείς, ὁ τὴν εἰρήνην διαχέαςπάντῃ διὰ γῆς καὶ θαλάττης ἄχρι τῶν τοῦ κόσμουπεράτων; οὐκ ἀκοῇ πυνθανόμενος τὰ περὶ τὸ ἱερὸν καὶ ὅτι οὐδὲνἐστιν ἀφίδρυμα ἐν αὐτῷ χειρόκμητον, ὁρατὸν ἀοράτουμίμημα φύσεως, ἐθαύμαζε καὶ προσεκύνει, φιλοσοφίας οὐκἄκροις χείλεσι γευσάμενος ἀλλ’ ἐπὶ πλέον ἑστιαθεὶς καὶ σχεδόν τι καθ’ ἑκάστην ἡμέραν ἑστιώμενος, τὰ μὲνμνήμαις ὧν ἡ διάνοια προμαθοῦσα τὰ φιλοσοφίαςἀνεπόλει, τὰ δὲ καὶ ταῖς τῶν συνόντων ἀεὶ λογίωνσυνδιαιτήσεσι; κατὰ γὰρ τὰς ἐν δείπνῳ συνουσίας ὁπλεῖστος χρόνος ἀπενέμετο τοῖς ἀπὸ παιδείας, ἵνα μὴ τὸσῶμα μόνον ἀλλὰ καὶ ἡ ψυχὴ τοῖς οἰκείοις ἀνατρέφοιτο. τεκμηρίοις δὲ ἀφθόνοις πιστώσασθαι δυνάμενος τὸ βούλημα τοῦ Σεβαστοῦ προπάππου σουδυσὶν ἀρκεσθήσομαι. τὸ μὲν γὰρ πρῶτον ἐπέσστειλε τοῖςἐπιτρόποις τῶν κατὰ τὴν τὴν ἐπικρατειῶν, πυθόμενοςὀλιγωρεῖσθαι τὰς ἱερὰς ἀπαρχάς, ἵνα ἐπιτρέπωσι τοῖςἸουδαίοις μόνοις εἰς τὰ συναγώγια συνέρχεσθαι· μὴ γὰρ εἶναι ταῦτα συνόδους ἐκ μέθης καὶ παροινίαςἐπισυστάσας, ὡς λυμαίνεσθαι τὰ τῆς εἰρήνης, ἀλλὰ διδασκαλεῖα σωφροσύνης καὶδικαιοσύνης ἀνδρῶν ἐπιτηδευόντων μὲν ἀρετήν, ἀπαρχὰςδὲ ἐτησίους συμφερόντων, ἐξ ὧν ἀνάγουσι θυσίαςστέλλοντες ἱεροπομποὺς εἰς τὸ ἐν Ἱεροσολύμοις ἱερόν. εἶτα κελεύει μηδένα ἐμποδὼν ἵστασθαι τοῖς Ἰουδαίοις μήτεσυνιοῦσι μήτε συνεισφέρουσι μήτε διαπεμπομένοις κατὰτὰ πάτρια εἰς Ἱεροσόλυμα· ταῦτα γὰρ εἰ καὶ μὴ τοῖς ῥήμασι, τοῖς γοῦνπράγμασιν ἐπέσταλται. μίαν δὲ ἐπιστολὴν ὑποτέταχα πρὸς τὴν σὴν τοῦ δεσπότουπειθώ, ἣν Γάιος Νορβανὸς Φλάκκος ἐπιστέλλει δηλῶν τὰὑπὸ Καίσαρος αὐτῷ γραφέντα. ἔστι δὲ τῆς ἐπιστολῆς τὸ ἀντίγραφον τόδε· Γάιος ΝορβανὸςΨλάκκος ἀνθύπατος Ἐφεσίων ἄρχουσι χαίρειν. Καῖσάρ μοι ἔγραψεν, Ἰουδαίους, οὗ ἄν ὦσιν, ἰδίῳ ἀρχαίῳ ἐθισμῷνομίζειν συναγομένους χρήματα φέρειν, ἃ πέμπουσιν εἰςἹεροσόλυμα· τούτους οὐκ ἠθέλησε κωλύεσθαι τοῦτοποιεῖν. ἔγραψα οὖν ὑμῖν, ἵν’ εἰδῆτε, ὡς ταῦτα οὕτωςγίνεσθαι κελεύει. ἆρ οὐκ ἐναργὴς πίστις ἐστίν, αὐτοκράτορ, τῆς Καίσαροςπροαιρέσεως, ᾗ περὶ τὴν τοῦ ἡμετέρου ἱεροῦ τιμὴνἐκέχρητο, μὴ βουληθεὶς τῷ κοινῷ τύπῳ τῶν συνόδων ἀναιρεθῆναιτὰς τῶν Ἰουδαίων εἰς τα.ὐτὸ συμφοιτήσεις, ἃς ἀπαρχῶνἕνεκα ποιοῦνται καὶ τῆς ἄλλης εὐσεβείας; ἕτερον δέ ἐστιν οὐκ ἀποδέον τούτου δεῖγμα σαφέστατοντῆς βουλήσεως τοῦ Σεβαστοῦ· διετάξατο γὰρ ἐκ τῶν ἰδίωνπροσόδων ἀνάγεσθαι θυσίας ἐντελεχεῖς ὁλοκαύτους τῷὑψίστῳ θεῷ καθ’ ἑκάστην ἡμέραν, αἳ καὶ μέχρι νῦν ἐπιτελοῦνται· ἄρνες εἰσὶ δύο καὶταῦρος τὰ ἱερεῖα, οἷς Καῖσαρ ἐφαίδρυνε τὸν βωμὸνἐπιστάμενος σαφῶς, ὅτι οὐδέν ἐστιν ἀφίδρυμα οὔτεφανερὸν οὔτε ἀφανές· ἀλλὰ γὰρ ὁ τοσοῦτος ἡγεμὼν καὶ φιλόσοφος οὐδενὸςδεύτερος ἐλογίσατο παρ’ ἑαυτῷ, ὅτι ἀναγκαῖόν ἐστιν ἐντοῖς περιγείοις ἐξαίρετον ἀπονενεμῆσθαι τόπον ἱερὸν τῷ ἀοράτῳ θεῷ μηδὲν ὁρατὸν ἀπεικόνισμα περιέξοντα πρὸςμετουσίαν ἐλπίδων χρηστῶν καὶ ἀπόλαυσιν ἀγαθῶντελείων. ὑφηγητῇ τοιούτῳ τῆς εὐσεβείας χρησαμένη καὶ ἡπρομάμμη σου Ἰουλία Σεβαστὴ κατεκόσμησε τὸν νεὼνχρυσαῖς φιάλαις καὶ σπονδείοις καὶ ἄλλων ἀναθημά- τῶν πολυτελεστάτων πλήθει· τί παθοῦσα καὶ αὕτη,μηδενὸς ἔνδον ὄντος ἀφιδρύματος; ἀσθενέστεραι γάρ πώςεἰσιν αἱ γνῶμαι τῶν γυναικῶν ἔξω τῶν αἰσθητῶν μηδὲνἰσχύουσαι νοητὸν καταλαβεῖν. ἡ δέ γε καθάπερ ἐν τοῖς ἄλλοις ὅλον τὸ γένος κἀν τούτῳ διήνεγκεν, ὑπὸ παιδείας ἀκράτουφύσει καὶ μελέτῃ περιγεγενημένη, ἀρρενωθεῖσα τὸνλογισμόν, ὃς οὕτως ὀξυδερκὴς ἐγεγένητο, ὡς μᾶλλον τὰ νοητὰ καταλαμβάνειν τῶναἰσθητῶν καὶ ταῦτα νομίζειν ἐκείνων εἶναι σκιάς ἔχων οὖν, δέσποτα, τῆς ἡμερωτέρας προαιρέσεως τοιαῦταπαραδείγματα, πάντα οἰκειότατα καὶ συγγενέστατα ἀφ’ ὧνἐσπάρης καὶ ἀνέβλαστες καὶ τοσοῦτον ηὐξήθης,διατήρησον ἃ κἀκείνων ἕκαστος. παρακλητεύουσι τοῖς νόμοις αὐτοχράτορες πρὸς αὐτοκράτορα, Σεβαστοὶ πρὸς Σεβαστόν, πάπποι καὶπρόγονοι πρὸς ἔκγονον, πλείους πρὸς ἕνα, μονονουχὶφάσκοντες· ἐν ταῖς ἡμετέραις βουλήσεσιν ἃ μέχρι καὶτήμερον ἐφυλάχθη νόμιμα μὴ καθέλῃς· καὶ γὰρ εἰ μηδὲν ἐκτῆς καταλύσεως αὐτῶν ἀπαντηθείη παλίμφημον, ἀλλ’ ἥ γετοῦ μέλλοντος ἀδηλότης καὶ τοῖς θαρραλεωτάτοις, εἰ μὴκαταφρονηταὶ τῶν θείων εἰσίν, οὐ παντελῶς ἐστιν ἄφοβος. ἐὰν καταλέγμαι τὰς εἰς ἐμαυτὸν ἐκ σοῦ γενομέναςεὐεργεσίας, ἐπιλείψει με ἡ ἡμέρα, πρὸς τῷ μηδὲ ἁρμόττονεἶναι προηγούμενον ἔργον πάρεργον ἑτέρου ποιεῖσθαιλόγου · κὰν ἡσυχάζω μέντοι, τὰ πράγματα αὐτὰ βοᾷ καὶφωνὴν ἀφίησιν. ἔλυσάς με σιδήρῳ δεδεμένον· τίς οὐκοἶδεν; ἀλλὰ μὴ χαλεπωτέροις δεσμοῖς, αὐτοκράτορ, ἐπισφίγξῃς· οἱ μὲνγὰρ λυθέντες μέρει περιβέβληντο τοῦ σώματος, οἱ δὲ νῦνπροσδοκώμενοι ψυχῆς εἰσιν, ὅλην αὐτὴν δι’ ὅλων μέλλοντες πιέζειν. τὸν ἐπικρεμάμενον ἀεὶ τοῦ θανάτου φόβον ἀπώσω καὶτεθνεῶτα τῷ δέει ζωπυρήσας καθάπερ ἐκ παλιγγενεσίαςἀνήγειρας· διατήρησον τὴν χάριν, αὐτοκράτορ, ἵνα μὴ ὁσὸς Ἀγρίππας ἀποτάξηται τῷ βίῳ· δόξω γὰρ οὐ τοῦσωθῆναι χάριν ἀφεῖσθαι μᾶλλον ἢ τοῦ βαρυτέρας ἐνδεξάμενος συμφορὰςἐπισημότερον τελευτῆσαι. τὸν μέγιστον καὶ εὐτυχέστατον ἐν ἀνθρώποις κλῆρονἐχαρίσω μοι, βασιλείαν, πάλαι μὲν μιᾶς χώρας, αὖθις δὲκαὶ ἑτέρας μείζονος, τὴν Τραχωνῖτιν λεγομένην καὶ τὴνΓαλιλαίαν συνάψας· μὴ τὰ πρὸς περιουσίαν μοιχαρισάμενος, ὦ δέσποτα, τὰ ἀναγκαῖα ἀφέλῃς μηδὲ εἰς φῶς ἀναγαγὼν τηλαυγέστατον ἐξ ὑπαρχῆς εἰςβαθύτατον σκότος ῥίψῃς. ἐξίσταμαι τῶν λαμπρῶν ἐκείνων, τὴν πρὸ μικροῦ τύχην οὐπαραιτοῦμαι, πάντα ὑπαλλάττομαι ἑνός, τοῦ μὴ κινηθῆναιτὰ πάτρια. τίς γὰρ ἄν μου γένοιτο λόγος ἢ παρὰ τοῖςὁμοφύλοις ἢ παρὰ τοῖς ἄλλοις ἅπασιν ἀνθρώποις; ἀνάγκηγὰρ δυοῖν θάτερον ἢ προδότην τῶν ἰδίων ἢ σοὶ μηκέτι ὁμοίως φίλου νομισθῆναι· ὧν τί ἄν εἴη μεῖζονκακόν;
+        <note type="textual"/>
+        <note type="discussion"/>
+        <note type="corrigenda"/>
+        <idno type="CTS-URN" xml:base="https://scaife.perseus.org/reader/">urn:cts:greekLit:tlg0018.tlg031.opp-grc1:276-327</idno>
+        <ref target="https://scaife-cts.perseus.org/api/cts?request=GetPassage&amp;urn=urn:cts:greekLit:tlg0018.tlg031.opp-grc1:276-327"/>
+      </ab>
+      <listBibl>
+        <head>Works Cited</head>
+        <bibl xml:id="bib1-1">
+          <ptr target="https://caesarea-maritima.org/bibl/GP94R8G7"/>
+          <citedRange unit="section">276-327</citedRange>
+        <title level="m">Legatio Ad Gaium: Machine Readable Text</title>
+          <author>
+            <name>Philo Judaeus</name>
+          </author>
+          <editor>
+            <forename>Leopold</forename>
+            <surname>Cohn</surname>
+          </editor>
+          <editor>
+            <forename>Sigofried</forename>
+            <surname>Reiter</surname>
+          </editor>
+        </bibl>
+      </listBibl>
+      <listBibl>
+        <head>Additional Bibliography</head>
+        <bibl>
+          <ptr target="https://caesarea-maritima.org/bibl/2T3QPLC4"/>
+          <citedRange unit="section">276-327</citedRange>
+        <title level="m">Philonis Alexandrini Opera Quae Supersunt</title>
+          <author>
+            <name>Philo Judaeus</name>
+          </author>
+          <editor>
+            <forename>Leopold</forename>
+            <surname>Cohn</surname>
+          </editor>
+          <editor>
+            <forename>Sigofried</forename>
+            <surname>Reiter</surname>
+          </editor>
+        </bibl>
+      </listBibl>
+        <note type="related-texts"/>
+        <note type="geography"/>
+        <note type="prosopography"/>
+        <note type="themes"/>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="zh-latn-pinyin-nt">feature 1</title>
+            <title level="m">Architectura Sinica</title>
+            <principal xml:id="TGM">Tracy Miller</principal>
+            <editor role="general" ref="#TGM">Tracy Miller</editor>
+            <editor role="creator" ref="#TGM">Tracy Miller</editor>
+            <respStmt><resp>wsalesky@gmail.com</resp><name type="person">wsalesky@gmail.com</name></respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Architectura Sinica</authority>
+            <idno type="URI">http://syriaca.org/keyword/p012/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date/>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="zh-latn-pinyin-nt">Pinyin without tones</language>
+            <language ident="zh-Hant">Traditional Chinese</language>
+            <language ident="zh-Hans">Simplified Chinese</language>
+            <language ident="zh-latn-pinyin">Pinyin</language>
+            <language ident="zh-latn-wadegile">Wade-Giles</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="#onlineForms" when="2021-05-12Z">wsalesky@gmail.com, Test pull request second try</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entryFree type="architectural-feature" xml:id="p012">
+            <term xml:lang="en" type="preferred" xml:id="termp012-1">feature 1</term><term xml:lang="en" type="variant" xml:id="termp012-2">feature 2</term>
+            <idno type="URI">http://syriaca.org/keyword/p012</idno>
+            <gloss/>
+            <note/>
+            
+            <listRelation>
+               <relation active="http://syriaca.org/keyword/p012"/>
+            </listRelation>
+         </entryFree>
+      </body>
+   </text>
+</TEI>

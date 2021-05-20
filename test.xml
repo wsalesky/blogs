@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="zh-latn-pinyin-nt">something</title>
+            <title level="m">Architectura Sinica</title>
+            <principal xml:id="TGM">Tracy Miller</principal>
+            <editor role="general" ref="#TGM">Tracy Miller</editor>
+            <editor role="creator" ref="#TGM">Tracy Miller</editor>
+            <respStmt><resp>Data entry and revision by</resp><name type="person">NG</name></respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Architectura Sinica</authority>
+            <idno type="URI">http://syriaca.org/keyword/test/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date/>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="zh-latn-pinyin-nt">Pinyin without tones</language>
+            <language ident="zh-Hant">Traditional Chinese</language>
+            <language ident="zh-Hans">Simplified Chinese</language>
+            <language ident="zh-latn-pinyin">Pinyin</language>
+            <language ident="zh-latn-wadegile">Wade-Giles</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="#onlineForms" when="2021-05-20Z">NG, Here's a comment</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entryFree type="architectural-feature" xml:id="test">
+            <term xml:lang="en" type="preferred" xml:id="termtest-1" source="#bibltest-bibnum">something</term>
+            <idno type="URI">http://syriaca.org/keyword/test</idno>
+            <gloss/>
+            <note/>
+            <bibl xml:id="bibltest-bibnum"><title xml:id="nametest-2"/><author/><ptr/><citedRange unit="pp"/></bibl><bibl xml:id="bibltest-bibnum"><title xml:id="nametest-2">Test</title><author>Test</author><ptr/><citedRange unit="pp">Test</citedRange></bibl>
+            <listRelation>
+               <relation active="http://syriaca.org/keyword/test"/><relation ref="foaf:depicts" active="https://farm5.staticflickr.com/4099/4822349222_4b4b990726_z.jpg" rendition="featured" passive="http://syriaca.org/keyword/test"/>
+            </listRelation>
+         </entryFree>
+      </body>
+   </text>
+</TEI>

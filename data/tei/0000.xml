@@ -2,9 +2,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="a" xml:lang="en">$Shelf mark$</title>
-                <title level="m" xml:lang="en">MAJLIS: The Transformation of Jewish Literature in
-                    Arabic in the Islamicate World</title>
+                <title level="a" xml:lang="en">1st Test </title>
+                <title level="m" xml:lang="en">MAJLIS: The Transformation of Jewish Literature in                    Arabic in the Islamicate World</title>
                 <sponsor ref="https://www.uni-muenchen.de">
                     <orgName>Ludwig Maximilian University of Munich</orgName> (<orgName xml:lang="de">Ludwig-Maximilians-Universität München</orgName>) </sponsor>
                 <sponsor ref="http://www.naher-osten.uni-muenchen.de">
@@ -61,7 +60,7 @@
                         </altIdentifier>
                         <msName/>
                     </msIdentifier>
-                    <msContents>
+                    <msContents><msItem><locus/></msItem>
                         <summary/>
                         <msItem>
                             <locus/>

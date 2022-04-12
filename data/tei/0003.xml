@@ -1,0 +1,167 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="en">Test save and retrieve</title>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </titleStmt>
+            <publicationStmt>
+                <authority>
+                    <ref target="https://majlis.net">MAJLIS.net</ref>
+                </authority>
+                <idno type="URI">https://majlis.net/manuscript/0003/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 4.0 International (CC BY 4.0) License.</p>
+                    </licence>
+                </availability>
+                <date>2021-10-23+02:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>This manuscript description is born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Example</country>
+                        <settlement>Exampletown</settlement>
+                        <institution>Example Library</institution>
+                        <repository>Example Collection</repository>
+                        <idno>MS Example 11</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <summary>
+                            Miscellany of commentaries on the Bible.
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="composite">
+                        </objectDesc>
+                        <bindingDesc>
+                            <binding>
+                                <p/>
+                                <dimensions type="binding">
+                                    <height unit="mm"/>
+                                    <width unit="mm"/>
+                                    <depth unit="mm"/>
+                                    <p>Description of the binding</p>
+                                </dimensions>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <summary>Descriptions of the provenance that pertain to the manuscript's overall history.</summary>
+                    </history>
+                    <msPart>
+                        <msIdentifier>
+                            <idno>MS Example 11, ff. 1a-55b</idno>
+                        </msIdentifier>
+                        <msContents>
+                            <summary/>
+                            <msItem xml:id="1">
+                                <locus from="1a" to="55b">1a-55b</locus>
+                                <title xml:lang="en">Commentary on the Bible 1</title>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc form="single">
+                                <supportDesc>
+                                    <!-- … -->
+                                </supportDesc>
+                                <layoutDesc>
+                                    <!-- … -->
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <!-- … -->
+                            </handDesc>
+                            <additions>
+                                <!-- … -->
+                            </additions>
+                        </physDesc>
+                        <history>
+                            <summary>Descriptions of the provenance that pertain only to this codicological unit.</summary>
+                        </history>
+                    </msPart>
+                    <msPart>
+                        <msIdentifier>
+                            <idno>MS Example 11, ff. 56a-100b</idno>
+                        </msIdentifier>
+                        <msContents>
+                            <summary/>
+                            <msItem xml:id="2">
+                                <locus from="56a" to="100b">56a-100b</locus>
+                                <title xml:lang="en">Commentary on the Bible 2</title>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc form="single">
+                                <supportDesc>
+                                    <!-- … -->
+                                </supportDesc>
+                                <layoutDesc>
+                                    <!-- … -->
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <!-- … -->
+                            </handDesc>
+                            <additions>
+                                <!-- … -->
+                            </additions>
+                        </physDesc>
+                        <history>
+                            <summary>Descriptions of the provenance that pertain only to this codicological unit.</summary>
+                        </history>
+                    </msPart>
+                    <msPart>
+                        <msIdentifier>
+                            <idno>MS Example 11, ff. 101a-200b</idno>
+                        </msIdentifier>
+                        <msContents>
+                            <summary/>
+                            <msItem xml:id="3">
+                                <locus from="101a" to="200b">101a-200b</locus>
+                                <title xml:lang="en">Commentary on the Bible 3</title>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc form="single">
+                                <supportDesc>
+                                    <!-- … -->
+                                </supportDesc>
+                                <layoutDesc>
+                                    <!-- … -->
+                                </layoutDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <!-- … -->
+                            </handDesc>
+                            <additions>
+                                <!-- … -->
+                            </additions>
+                        </physDesc>
+                        <history>
+                            <summary>Descriptions of the provenance that pertain only to this codicological unit.</summary>
+                        </history>
+                    </msPart>
+                </msDesc>
+            </listBibl>
+        </body>
+    </text>
+</TEI>
